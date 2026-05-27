@@ -1,0 +1,35 @@
+{
+  "name": "crab-taoist/crab-taoist",
+  "description": "A lightweight Yaf + Composer API scaffold for production-ready services.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0",
+    "vlucas/phpdotenv": "^2.6",
+    "monolog/monolog": "^1.27",
+    "symfony/console": "^3.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Crab\\": "src/",
+      "Support\\": "application/library/Support/"
+    },
+    "files": [
+      "application/library/Support/Yaf/Bases.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

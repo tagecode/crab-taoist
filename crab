@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+define('BASE_PATH', __DIR__);
+define('APPLICATION_PATH', BASE_PATH . '/application');
+
+require BASE_PATH . '/vendor/autoload.php';
+
+$application = new Crab\Console\Application();
+$application->run();
